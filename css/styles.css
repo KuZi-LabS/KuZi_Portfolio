@@ -94,6 +94,7 @@ nav ul li a.active {
 
 /* Intro Section */
 .intro {
+  font-weight: lighter;
   padding: 80px 100px;
   text-align: center;
   background: #1c1c1c;
@@ -101,7 +102,7 @@ nav ul li a.active {
 }
 
 .intro-content h2 {
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 20px;
   color: #e0e0e0;
 }
