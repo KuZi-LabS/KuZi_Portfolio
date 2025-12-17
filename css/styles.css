@@ -127,7 +127,7 @@ body{
 .hero{
   align-items: center;
   position:relative;
-  padding: 60px 20px 100px;
+  padding: 60px 20px 0px;
   overflow:hidden;
 }
 
@@ -207,15 +207,17 @@ body{
   filter: saturate(.9) contrast(.95);
   border-radius: 14px;
   overflow:hidden;
-  opacity:.12;
+  opacity:.20;
   pointer-events:none;
 }
+
+
 .slide{position:absolute; inset:0; opacity:0; transition:opacity .7s ease}
 .slide.active{opacity:1}
 .slide img{width:100%;height:100%;object-fit:cover}
 
 /* Previews and Grid */
-.container{max-width:var(--max-width);margin:0 auto;padding:28px}
+.container{max-width:var(--max-width);margin:0 auto;padding:100px}
 .preview{padding:36px 0}
 .section-title{font-size:28px;margin-bottom:6px}
 .section-sub{color:var(--muted);margin-bottom:18px}
