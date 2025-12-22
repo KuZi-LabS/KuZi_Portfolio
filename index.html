@@ -1,139 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KuZi — Home</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- NAV -->
+
+  <!-- NAVBAR -->
   <header>
-    <nav class="nav-bar">
-      <ul class="nav-list">
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
+    <nav class="navbar">
+      <div class="brand">KuZi</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-
-      <div class="brand">KuZi</div> <!-- center brand -->
-
-      <ul class="nav-list">
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
+      <button class="nav-toggle" id="navToggle">☰</button>
     </nav>
 
-
-    <!-- Sidebar (mobile) -->
-    <aside id="mobileMenu" class="sidebar" aria-hidden="true">
-      <button class="close-btn" id="navClose" aria-label="Close menu">✖</button>
-      <nav class="sidebar-nav">
-        <a href="index.html" class="sidebar-link">Home</a>
-        <a href="about.html" class="sidebar-link">About</a>
-        <a href="projects.html" class="sidebar-link">Projects</a>
-        <a href="contact.html" class="sidebar-link">Contact</a>
-      </nav>
-    </aside>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" id="navClose">✖</button>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
-  <!-- HERO / SLIDES -->
-  <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <hr class="hero-line">
-        <h1 class="hero-title"><span class="accent">Digital Solutions</span></h1>
-        <p class="hero-sub">
-          "Creating intelligent systems that blend seamless digital experiences. <br> Solutions designed for reliability, scalability, and real-world impact."
-        </p>
-        <div class="hero-cta">
-          <a href="projects.html" class="btn btn-primary">View Projects</a>
-          <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="accent">Kuzivakwashe</span></h1>
+      <p>AI Systems Engineer & Full-Stack Developer creating intelligent systems with clean interfaces.</p>
+      <a href="projects.html" class="btn btn-primary">View Projects</a>
+      <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/robot-farming-with-drones-field-sunset.jpg" alt="Hero Image">
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="about-preview">
+    <div class="container">
+      <div class="split">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I build practical, beautiful software. I specialize in front-end experience, responsive design, and scalable systems.</p>
+          <a href="about.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="about-image">
+          <img src="images/ChatGPT Image Dec 22, 2025, 07_52_51 PM.png" alt="KuZi Portrait">
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="hero-slideshow" aria-hidden="true">
-        <div class="slide active"><img src="images/pexels-divinetechygirl-1181325.jpg" alt="Project preview 1"></div>
-        <div class="slide"><img src="images/pexels-darlene-alderson-4385547.jpg" alt="Project preview 2"></div>
-        <div class="slide"><img src="images/hero-3.jpg" alt="Project preview 3"></div>
-      </div>
-    </section>
-
-    <!-- ABOUT PREVIEW -->
-    <section class="about-preview">
-      <div class="container">
-        <div class="split">
-          <div class="card dark-card">
-            <h2 class="about-text">Hello</h2>
-            <h2 class="name-text">I'm Kuzivakwashe Kanyemba.</h2>
-            <p class="moto"><br>
-              A developer focused on creating clean interfaces and reliable systems.
-              I love design systems, UX-driven interfaces and shipping projects that solve real problems.
-            </p>
-            <a href="about.html" class="btn btn-outline">Learn more</a>
-          </div>
-
-          <div class="card image-card">
-            <img src="images/pexels-markusspiske-225769.jpg" alt="KuZi portrait">
-          </div>
+  <!-- PROJECTS PREVIEW -->
+  <section class="projects-preview">
+    <div class="container">
+      <h2>Selected Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project-1.jpg" alt="Project 1">
+          <h3>Inventory Dashboard</h3>
+          <p>Full-stack dashboard for tracking stock, shipments and analytics.</p>
+          <a href="projects.html" class="project-link">View Project →</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project-2.jpg" alt="Project 2">
+          <h3>Student Planner PWA</h3>
+          <p>Manage classes, reminders, and offline access as a PWA.</p>
+          <a href="projects.html" class="project-link">View Project →</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project-3.jpg" alt="Project 3">
+          <h3>Marketplace Optimizer</h3>
+          <p>Tools to improve listings and conversions on marketplaces.</p>
+          <a href="projects.html" class="project-link">View Project →</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PROJECTS PREVIEW -->
-    <section class="preview projects-preview">
-      <div class="container">
-        <h2 class="section-title">Selected Projects</h2>
-        <p class="section-sub">A few highlights — click through to see details.</p>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <img src="images/CMSC (1).png" alt="Project 1">
-            <div class="project-body">
-              <h3>Project One</h3>
-              <p>Web app — inventory & shipping dashboard with real-time updates.</p>
-              <a href="projects.html" class="project-link">View project →</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="images/project-2.jpg" alt="Project 2">
-            <div class="project-body">
-              <h3>Project Two</h3>
-              <p>Progressive web app for student planner and notifications.</p>
-              <a href="projects.html" class="project-link">View project →</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="images/project-3.jpg" alt="Project 3">
-            <div class="project-body">
-              <h3>Project Three</h3>
-              <p>E-commerce integrations and listings optimizations for marketplaces.</p>
-              <a href="projects.html" class="project-link">View project →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <div class="brand small">KuZi</div>
-          <p class="muted">Designed & built by Kuzivakwashe Kanyemba</p>
-        </div>
-
-        <nav class="footer-nav">
-          <a href="index.html">Home</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-
-        <p class="muted">© <span id="year"></span> KuZi — All rights reserved.</p>
-      </div>
-    </footer>
-  </main>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer">
+      <div class="brand">KuZi</div>
+      <p>© <span id="year"></span> Kuzivakwashe Kanyemba — All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
